@@ -1,0 +1,31 @@
+<div class="border-shell">
+  <app-header></app-header>
+  <div class="full-h-w">
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+              <div class="column is-12">
+                <router-outlet></router-outlet>
+              </div>
+            </div>
+            <hr>
+            <div class="columns">
+              <div class="column is-12 border-microapp">
+                <div *ngIf="company">
+                  <micro-app [company]="company"></micro-app>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <div class="columns">
+              <div class="column is-12 is-flex is-justify-content-center">
+                <ul>
+                  <li>Recuadro Rojo aplicacion Shell</li>
+                  <li>Recuadro Azul aplicacion MicroApp</li>
+                </ul>
+              </div>
+            </div>
+        </div>
+    </section>
+  </div>
+</div>

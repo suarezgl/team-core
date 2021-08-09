@@ -1,0 +1,6 @@
+micro-app/node_modules
+micro-app/dist
+legacy-app/.firebase
+legacy-app/node_modules
+legacy-app/dist
+.DS_Store
